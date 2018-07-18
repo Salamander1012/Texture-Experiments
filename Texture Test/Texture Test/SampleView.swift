@@ -11,15 +11,19 @@ import AsyncDisplayKit
 
 class SampleView: ASDisplayNode {
     
-    var titleLabel: ASTextNode {
-        let label = ASTextNode()
-        label.attributedText = NSAttributedString(string: "Hello World")
-        return label
-    }
+    let titleLabel = ASTextNode()
     
     override init() {
         super.init()
+        
+        let titleAttributes = [
+            NSAttributedStringKey.foregroundColor : UIColor.black,
+            NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)
+        ]
+        titleLabel.attributedText = NSAttributedString(string: "Hello World", attributes: titleAttributes)
         addSubnode(titleLabel)
+        
+        backgroundColor = .lightGray
     }
     
     override func didLoad() {
