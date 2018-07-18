@@ -9,13 +9,12 @@
 import UIKit
 import AsyncDisplayKit
 
-class ViewController: ASViewController<ASDisplayNode> {
+class ViewController: ASViewController<ASTableNode> {
     
     //MARK: Lifecycle
     
     init() {
-//        super.init(node: ASTableNode())
-        super.init(node: SampleView())
+        super.init(node: ASTableNode())
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,8 +25,8 @@ class ViewController: ASViewController<ASDisplayNode> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        node.delegate = self
-//        node.dataSource = self
+        node.delegate = self
+        node.dataSource = self
     }
 }
 
@@ -39,19 +38,9 @@ extension ViewController: ASTableDelegate, ASTableDataSource {
         return 5
     }
     
-//    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-//        let cell = SampleCell()
-//        return cell
-//    }
-    
-    
-    func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
+    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
         let cell = SampleCell()
-        let nodeBlock: ASCellNodeBlock = { 
-            return SampleCell()
-        }
-        return nodeBlock
+        return cell
     }
-    
 }
 
