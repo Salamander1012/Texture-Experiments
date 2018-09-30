@@ -17,6 +17,9 @@
 		74A0D33C20FFCD5E003344B3 /* PhotosCVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0D33B20FFCD5E003344B3 /* PhotosCVController.swift */; };
 		74A0D33F20FFD046003344B3 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0D33E20FFD046003344B3 /* PhotosViewModel.swift */; };
 		74A0D34620FFD320003344B3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0D34520FFD320003344B3 /* File.swift */; };
+		C9CF9CD621443A2E00D9F655 /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF9CD521443A2E00D9F655 /* PicturesViewController.swift */; };
+		C9CF9CD92144976300D9F655 /* MosaicCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF9CD82144976300D9F655 /* MosaicCollectionViewLayout.swift */; };
+		C9CF9CDB21449F4B00D9F655 /* ImageCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF9CDA21449F4B00D9F655 /* ImageCellNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		74A0D33E20FFD046003344B3 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		74A0D34520FFD320003344B3 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9661E353053F80DDEC0CCDF8 /* Pods-Texture Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texture Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Texture Test/Pods-Texture Test.debug.xcconfig"; sourceTree = "<group>"; };
+		C9CF9CD521443A2E00D9F655 /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
+		C9CF9CD82144976300D9F655 /* MosaicCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCollectionViewLayout.swift; sourceTree = "<group>"; };
+		C9CF9CDA21449F4B00D9F655 /* ImageCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellNode.swift; sourceTree = "<group>"; };
 		E0749C90FA1C13F6E60FD3F7 /* Pods_Texture_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texture_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,7 @@
 		7499541520FE7EE800E5A6D0 /* Texture Test */ = {
 			isa = PBXGroup;
 			children = (
+				C9CF9CD72144974800D9F655 /* Layout */,
 				74A0D34420FFD300003344B3 /* RandomTestingStuff */,
 				74A0D34320FFD2EA003344B3 /* Model */,
 				74A0D34220FFD2E5003344B3 /* View */,
@@ -110,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				74A0D33B20FFCD5E003344B3 /* PhotosCVController.swift */,
+				C9CF9CDA21449F4B00D9F655 /* ImageCellNode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 				7499542C20FEA06F00E5A6D0 /* SampleView.swift */,
 				7499542A20FE8D8B00E5A6D0 /* SampleCell.swift */,
 				7499541820FE7EE800E5A6D0 /* ViewController.swift */,
+				C9CF9CD521443A2E00D9F655 /* PicturesViewController.swift */,
 			);
 			path = RandomTestingStuff;
 			sourceTree = "<group>";
@@ -138,6 +147,14 @@
 				1D5DF4CD50709E2478510C90 /* Pods-Texture Test.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9CF9CD72144974800D9F655 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF9CD82144976300D9F655 /* MosaicCollectionViewLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +277,11 @@
 				7499542D20FEA06F00E5A6D0 /* SampleView.swift in Sources */,
 				7499541920FE7EE800E5A6D0 /* ViewController.swift in Sources */,
 				74A0D34620FFD320003344B3 /* File.swift in Sources */,
+				C9CF9CDB21449F4B00D9F655 /* ImageCellNode.swift in Sources */,
 				7499541720FE7EE800E5A6D0 /* AppDelegate.swift in Sources */,
 				74A0D33C20FFCD5E003344B3 /* PhotosCVController.swift in Sources */,
+				C9CF9CD621443A2E00D9F655 /* PicturesViewController.swift in Sources */,
+				C9CF9CD92144976300D9F655 /* MosaicCollectionViewLayout.swift in Sources */,
 				74A0D33F20FFD046003344B3 /* PhotosViewModel.swift in Sources */,
 				7499542B20FE8D8B00E5A6D0 /* SampleCell.swift in Sources */,
 			);
